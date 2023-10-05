@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Fortnox
+@namespace      github.com/openstyles/stylus
+@version        0.1.0
+@description    Various fixes to make Fortnox time report page a bit easier to use.
+@author         Sebastian Berlin
+==/UserStyle== */
+
+@-moz-document domain("fortnox.se") {
+    .dropdown-btn {
+        cursor: pointer;
+    }
+    
+    /* Don't trick me with hand pointer. */
+    .dropdown-container {
+        cursor: unset;
+    }
+    
+    /* Hide unnecessary column content. */
+    .table-week-view th:nth-child(1),
+    .table-week-view th:nth-child(2),
+    .table-week-view th:nth-child(4),
+    .table-week-view .field-cell:nth-child(1),
+    .table-week-view .field-cell:nth-child(2),
+    .table-week-view .field-cell:nth-child(4) {
+        font-size: 0;
+    }
+    
+    /* Make whole cells clickable. */
+    .field-cell div.c-dropdown-hours-cell {
+        padding: 0;
+    }
+    
+    .c-dropdown-hours-cell .dropdown-btn {
+        padding-right: 8px;
+    }
+}
