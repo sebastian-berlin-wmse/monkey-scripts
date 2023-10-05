@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Fortnox flex
 // @namespace    sebastian.berlin@wikimedia.se
-// @version      0.0.1
+// @version      0.1.0
 // @description  Highlight flex time rows
 // @author       Sebastian Berlin
-// @match        https://apps5.fortnox.se/time-reporting/*
+// @match        https://*.fortnox.se/time-reporting/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=fortnox.se
 // @grant        none
 // ==/UserScript==
