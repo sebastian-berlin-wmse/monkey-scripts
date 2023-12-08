@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fortnox extra
 // @namespace    sebastian.berlin@wikimedia.se
-// @version      0.1.1
+// @version      0.1.2
 // @description  Make Fortnox time reporting a bit better
 // @author       Sebastian Berlin
 // @match        https://*.fortnox.se/time-reporting/*
