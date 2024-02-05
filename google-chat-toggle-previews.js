@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Toggle previews
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Hide previews and allow toggling their visibility.
 // @author       Sebastian Berlin
-// @match        https://chat.google.com/u/0/frame?*
+// @match        https://chat.google.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
 // ==/UserScript==
