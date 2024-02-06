@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Toggle previews
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Hide previews and allow toggling their visibility.
 // @author       Sebastian Berlin
 // @match        https://chat.google.com/*
@@ -34,12 +34,12 @@
          }`
     );
     sheet.insertRule(
-        `.preview-toggle.your:has(+ .QPe6Ge[hidden]) {
+        `.preview-toggle.your:has(~ .QPe6Ge[hidden]) {
             rotate: 90deg;
         }`
     );
     sheet.insertRule(
-        `.preview-toggle.others:has(+ .QPe6Ge[hidden]) {
+        `.preview-toggle.others:has(~ .QPe6Ge[hidden]) {
             rotate: -90deg;
         }`
     );
@@ -71,6 +71,11 @@
                     for(let preview of previews) {
                         let content = preview.firstChild;
                         if(!content.hasChildNodes()) {
+                            continue;
+                        }
+
+                        if(preview.parentNode.querySelector(".preview-toggle")) {
+                            // Toggle has already been added here.
                             continue;
                         }
 
