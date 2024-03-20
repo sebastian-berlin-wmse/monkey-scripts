@@ -119,7 +119,7 @@
              color: var(--secondary-text-color);
              padding: 2px;
              padding-left: 1px;
-             background: rgb(241,243,244);
+             background: var(--background-color);
              border: solid 2px var(--gm3-color-outline);
              border-radius: 50%;
          }`
