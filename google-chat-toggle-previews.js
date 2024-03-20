@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Toggle previews
 // @namespace    sebastian.berlin@wikimedia.se
-// @version      0.1.4
+// @version      0.1.5
 // @description  Hide previews and allow toggling their visibility. Hide main chat when viewing threads.
 // @author       Sebastian Berlin
 // @match        https://chat.google.com/*
