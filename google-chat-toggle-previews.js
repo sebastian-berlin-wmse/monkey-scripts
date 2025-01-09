@@ -56,7 +56,7 @@
                     let button = document.createElement("button");
                     button.textContent = "▼";
                     button.classList.add("preview-toggle");
-                    if(preview.matches(".nF6pT.yqoUIf.Fxfmxb .QPe6Ge")) {
+                    if(preview.matches(".nF6pT.yqoUIf.Fxfmxb .QPe6Ge .kwI9i.zX644e.yqoUIf.n3AJp")) {
                         button.classList.add("your");
                     } else {
                         button.classList.add("others");
