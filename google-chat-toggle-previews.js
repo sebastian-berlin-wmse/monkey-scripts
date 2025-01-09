@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Toggle previews
 // @namespace    sebastian.berlin@wikimedia.se
-// @version      0.1.6
+// @version      0.1.7
 // @description  Hide previews and allow toggling their visibility. Hide main chat when viewing threads.
 // @author       Sebastian Berlin
 // @match        https://chat.google.com/*
@@ -56,7 +56,7 @@
                     let button = document.createElement("button");
                     button.textContent = "▼";
                     button.classList.add("preview-toggle");
-                    if(preview.matches(".nF6pT.yqoUIf.Fxfmxb .QPe6Ge .kwI9i.zX644e.yqoUIf.n3AJp")) {
+                    if(preview.matches(".nF6pT.yqoUIf.Fxfmxb .QPe6Ge")) {
                         button.classList.add("your");
                     } else {
                         button.classList.add("others");
