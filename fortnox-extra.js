@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fortnox extra
 // @namespace    sebastian.berlin@wikimedia.se
-// @version      0.1.2
+// @version      0.1.3
 // @description  Make Fortnox time reporting a bit better
 // @author       Sebastian Berlin
 // @match        https://*.fortnox.se/time-reporting/*
@@ -22,6 +22,9 @@
                 if(node.textContent === "Flextid +") {
                     let row = node.parentElement.closest("tr");
                     row.style.background = "salmon";
+                } else if(node.textContent.startsWith("Övertid ")) {
+                    let row = node.parentElement.closest("tr");
+                    row.style.background = "plum";
                 } else if(node instanceof Element) {
                     let saveButton = node.querySelector(".dialog .button.button-green");
                     if(!saveButton) {
